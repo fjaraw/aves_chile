@@ -6,14 +6,8 @@ def make_cards(fotos):
             <img src="{foto['images']['main']}" class="card-img-top" alt="{foto['name']['english']}">
             <div class="card-body">
                 <h5 class="card-title">{foto['name']['spanish']}</h5>
-            </div>
-            <ul class="list-group list-group-flush">
-                <!-- id de idiomas en ISO 639-1 -->
-                <li class="list-group-item"><b>en:</b> {foto['name']['english']}</li>
-                <li class="list-group-item"><b>la:</b> {foto['name']['latin']}</li>
-            </ul>
-            <div class="card-body">
-                <a href="{foto['images']['full']}" class="card-link">Ampliar imagen</a>
+                <p class="card-text">{foto['name']['english']}<br><i>{foto['name']['latin']}</i></p>
+                <a href="{foto['images']['full']}" class="btn btn-primary">Ampliar imagen</a>
             </div>
         </div>
     </div>'''
